@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator IMC</title>
+</head>
+
+<body>
+    <div class="container col-11 col-md-8">
+
+        <h1>
+            Calculatrice
+            <sup>
+                <span class="badge badge-secondary">IMC</span>
+            </sup>
+        </h1>
+
+        <hr>
+        <p style="text-align: center;">Vous allez ainsi savoir si vous êtes en pleine forme !</p>
+
+<!-- Age  -->
+        <div class="input-group input-group-sm mb-3 col-6 mx-auto p-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Âge</span>
+            </div>
+                <input type="number" id="age" class="form-control" aria-label="age"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Veillez mettre votre âge ">
+
+            </div>
+<!-- Taille -->
+            <div class="input-group input-group-sm mb-3 col-6 mx-auto p-0">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Taille</span>
+                </div>
+                    <input type="number" id="height"  class=" form-control" aria-label="height"
+                        aria-describedby="inputGroup-sizing-sm"
+                        placeholder="Veillez mettre votre taille en cm">
+                </div>
+
+<!-- Poids  -->
+                <div class="input-group input-group-sm mb-3 col-6 mx-auto p-0 ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Poids</span>
+                    </div>
+
+                    <input type="number" id="weight" class=" form-control" aria-label="weight"
+                        aria-describedby="inputGroup-sizing-sm"
+                        placeholder="Veillez mettre votre poids en kg">
+
+                </div>
+                
+                <hr>
+<!-- Résultats -->
+                <div id="resul">
+                    <button onclick="computeImc()" class= "btn btn-lg btn-primary btn-block col-10 p-3 mb-3 border-0" id='btn-calculator'>
+                        Calculer mon IMC
+                    </button>
+                
+                    <div class="h3 " style="display: none;" id="result-container">
+                        <span id="result">...</span>
+                    </div>
+                    <div class="text-secondary" style="display: none;" id="message-container">
+                        <span id="message">...</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="main.js"></script>
+</body>
+
+</html>
